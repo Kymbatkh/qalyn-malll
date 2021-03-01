@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="English--"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Qalyn Mal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="white-box">
+        <p>Bride's name</p>
+        <input type="text" id="name" style="width: 25%;" placeholder="Enter Name">
+        <p>Starting bid</p>
+        <input type="number" id="bid" style="width: 25%;"placeholder="Enter Starting Bid">  
+        <p>Bride's education</p>
+        <select id="education" style="width: 25%;">
+            <option value=1.5>Undergraduate degree</option>
+            <option value=1.2>College degree</option>
+            <option value=1.05>High school degree</option>
+            <option value=0.9>Middle school degree</option>
+        </select>
+        <p>Bride's family net worth</p>
+        <select id="family" style= "width: 25%">
+            <option value=2>More than 100,000$</option>
+            <option value=1.5>Between 50,000$ and 100,000$</option>
+            <option value=1.2>Less than 50,000$</option>
+        </select>
+        <p>Bride's skills</p>
+        <input class="skills" type="checkbox" value=100>Playing on dombra
+        <br>
+        <input class="skills" type="checkbox" value=200>Good cook
+        <br>
+        <input class="skills" type="checkbox" value=150>Easygoing character
+        <br>
+        <input class="skills" type="checkbox" value=100>Sings well
+        <br>
+        <p>Bride's age</p>
+        <input type="radio" name="age" value=1.5>Between 18 - 23 <!--Instead of different id you can use the same class and then select them all together-->
+        <br>
+        <input type="radio" name="age" value=1.2>Between 24 - 27
+        <br>
+        <input type="radio" name="age" value=0.95>28+
+        <br>
+        <p>Bride's reputation</p>
+        <input class="gossip" type="checkbox" value=0.85>Gossips about her parent's attitude <!--Instead of different id you can use the same class and then select them all together-->
+        <br>
+        <input class="gossip" type="checkbox" value=0.9>Gossips about her character
+        <br>
+        <input class="gossip" type="checkbox" value=200>General gossips around her person
+        <br>
+        <p>Love letter</p>
+        <textarea maxlength="500" id="letter"></textarea> 
+        <br>
+        <button id=btnShow>Calculate</button> <!--Use event listener in your JavaScript. Don't use onClick-->
+        <h2 id="result">Qalyn mal with special Love letter:</h2> <!--It should be one paragraph with all information (Name, price and love letter) together-->
+        
+        <script type="text/javascript" src="js.js"></script> 
+    </div>
+</body>
+
+</html>
